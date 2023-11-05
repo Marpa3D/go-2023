@@ -1,7 +1,9 @@
 // Ряд Фибоначчи. Несколько реализаций алгоритма
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // fibOneVersion - первая версия вычисления ряда Фибоначчи
 func fibOneVersion(position int) int {
@@ -14,7 +16,11 @@ func fibOneVersion(position int) int {
 }
 
 func main() {
-	fmt.Println("Start program algorithm Fibonacci")
+	fmt.Println("Старт программы для вычисления ряда Фибоначчи")
 
-	fmt.Printf("Версия алгоритма 1. Число Фибоначчи: %d\n", fibOneVersion(6))
+	var numFib int
+	fmt.Println("Введите целое число для вычисления ряда Фибоначчи:")
+	fmt.Scan(&numFib)
+
+	fmt.Printf("Версия алгоритма 1. Число Фибоначчи: %d\n", fibOneVersion(numFib))
 }
